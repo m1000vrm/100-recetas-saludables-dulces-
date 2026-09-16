@@ -1,0 +1,1 @@
+(()=>{let total=9*60+48;const el=document.getElementById('countdown');const tick=()=>{if(total<0)total=9*60+48;const h=Math.floor(total/3600),m=Math.floor(total%3600/60),s=total%60;el.textContent=[h,m,s].map(v=>String(v).padStart(2,'0')).join(':');total--};tick();setInterval(tick,1000)})();
